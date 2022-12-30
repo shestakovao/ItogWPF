@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItogWPF", "ItogWPF\ItogWPF.csproj", "{6825CF7B-58BE-4B3A-973F-E79E0F6CED19}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6825CF7B-58BE-4B3A-973F-E79E0F6CED19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6825CF7B-58BE-4B3A-973F-E79E0F6CED19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6825CF7B-58BE-4B3A-973F-E79E0F6CED19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6825CF7B-58BE-4B3A-973F-E79E0F6CED19}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {51CC10F1-2F3E-44A4-8533-3A3E3A0F9C20}
+	EndGlobalSection
+EndGlobal

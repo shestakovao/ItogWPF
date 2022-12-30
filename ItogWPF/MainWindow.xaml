@@ -36,7 +36,7 @@
 
         <UniformGrid Rows="7" Columns="4" Grid.Row="2">
             <Button Content="MR" Click="Button_Click_22" x:Name="MemRead" IsEnabled="False"/>
-            <Button Content="MS" Click="Button_Click_21" Height="55" VerticalAlignment="Top"/>
+            <Button Content="MS" Click="Button_Click_21"/>
             <Button Content="CE" Click="Button_Click_19"/>
             <Button Content="C" Click="Button_Click"/>
             <Button Content="√" Click="Button_Click_27"/>

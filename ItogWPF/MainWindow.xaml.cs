@@ -25,6 +25,14 @@ namespace ItogWPF
         bool inputOperationCondition = false; //Условие ввода операции 
         string memoryString = "";//строка памяти
 
+        private void FindErrorInInput()
+        {
+            if (InputText.Text == "Ошибка отрицательно число под корнем" || InputText.Text == "Ошибка деления на ноль")
+            {
+                InputText.Text = "0";
+            }
+        }
+
         private string ElementaryOperation(string addString, string operationString)//элементарная операция в строке первой по порядку операции
         {
             string outString = addString;
@@ -153,6 +161,7 @@ namespace ItogWPF
 
         private void AddStringToText(string addString)//добавление числовой строки
         {
+            FindErrorInInput();
             if (InputText.Text != "0" && !(inputOperationCondition))
             {
                 InputText.Text += addString;
@@ -168,6 +177,7 @@ namespace ItogWPF
 
         private void AddOperationToText(string addOperation)//добавление операции в строку
         {
+            FindErrorInInput();
             if (OutText.Text.IndexOf(" = ") > -1) OutText.Text = "";
             string tempString = OutText.Text;
             string tempSubString = "";
@@ -335,6 +345,7 @@ namespace ItogWPF
 
         private void Button_Click_11(object sender, RoutedEventArgs e)
         {
+            FindErrorInInput();
             bool findDecimialSeparator = true;
             foreach (char a in InputText.Text) //поиск есть ли уже разделитель разряда в исходной строке
             {
@@ -352,6 +363,7 @@ namespace ItogWPF
 
         private void Button_Click_12(object sender, RoutedEventArgs e)
         {
+            FindErrorInInput();
             string tempString = InputText.Text;
             if (tempString != "0")//если строка равна нулю то не ставим знак
             {
@@ -539,17 +551,18 @@ namespace ItogWPF
 
         private void Button_Click_20(object sender, RoutedEventArgs e)
         {
-            InputText.Text = "2,7182818284590452353602874713527";
+            InputText.Text = Math.E.ToString();
         }
 
 
         private void Button_Click_23(object sender, RoutedEventArgs e)
         {
-            InputText.Text = "3,1415926535897932384626433832795";
+            InputText.Text = Math.PI.ToString();
         }
 
         private void Button_Click_21(object sender, RoutedEventArgs e)
         {
+            FindErrorInInput();
             memoryString = InputText.Text;//поле ввода заносим в памяти калькулятора
             MemRead.IsEnabled = true;
         }
